@@ -30,8 +30,13 @@ migrate_working_dir/
 /build/
 .metadata
 
-# Dependency lockfile
+# Dependency lockfile (optional)
 pubspec.lock
+
+# Android Studio will place build artifacts here
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
 
 # Symbolication related
 app.*.symbols
@@ -39,7 +44,8 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Test files (optional, if not used)
+/test/
+
+# Other unnecessary files
+analysis_options.yaml (if not needed)
